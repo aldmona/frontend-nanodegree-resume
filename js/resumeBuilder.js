@@ -181,7 +181,7 @@ var projects = {
                         name: "Imam Mohammed Ibn Saud University",
                         location: "Riyadh - Uthman Ibn Affan Road",
                         degree: "BA",
-                        majors: ["Computer Science","art"],
+                        majors: ["Computer Science"],
                         dates: 2014,
                         url: "www.google.com"
                       }
@@ -233,7 +233,7 @@ var projects = {
 
                         $(".education-entry:last").append(HTMLonlineClasses);
                         if(education.onlineCourses.length > 0){
-                          for (i=0 ; i < education.onlineCourses.length ; i++){
+                          for (var i=0 ; i < education.onlineCourses.length ; i++){
 
                             var formattedCourseTitle=HTMLonlineTitle.replace("%data%",education.onlineCourses[i].title);
                             var formattedCourseSchool=HTMLonlineSchool.replace("%data%",education.onlineCourses[i].school);
